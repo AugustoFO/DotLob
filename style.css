@@ -1,0 +1,202 @@
+:root {
+    --fundo: #212226;
+    --texto: #15CDCB;
+    --roxo: #5B02A0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins';
+}
+
+body{
+    height: 100vh;
+    background-color: var(--fundo);
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+
+
+.container{
+    color: var(--texto);
+    height: 100vh;
+    margin-right: 65px;
+}
+
+.slogan{
+    font-size: 3em;
+    font-weight: bold;
+    padding-top: 100px;
+}
+
+.btn.btn-primary{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 20px;
+    height: auto;
+    width: 500px;
+    right: 7.5%;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    border-color: var(--roxo);
+    border-radius: 36px;
+    background:  radial-gradient(ellipse at top, var(--roxo), transparent), radial-gradient(ellipse at bottom, var(--fundo), transparent);
+}
+
+.row.align-items-start{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0;
+}
+
+.row.align-items-end{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0;
+    padding: 25px 0 25px 0;
+}
+
+.clearfix{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.col-md-6.float-md-end.mb-3.ms-md-3{
+    height: 25em;
+    width: 25em;
+}
+
+.infos .row.align-items-start{
+    padding-top: 25px;
+}
+
+.contato{
+    color: var(--roxo);
+    font-weight: 750;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infos{
+    height: 100vh;
+}
+
+.redes-sociais .redes{
+    padding: 15px;
+}
+
+.redes{
+    height: 50px;
+    padding-top: 100px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 375px){
+    .slogan{
+        font-size: 2.4em;
+    }
+    
+    .row.align-items-start{
+        padding-top: 100px;
+    }
+
+    .btn.btn-primary{
+        width: 85%;
+    }
+
+    .infos .row.align-items-start{
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 576px){
+
+    .slogan{
+        font-size: 2.5em;
+        padding-top: 0;
+    }
+
+    .row.row.align-items-start{
+        padding-top: 50%;
+    }
+
+    .btn.btn-primary{
+        width: 85%;
+    }
+
+    .infos .row.align-items-start{
+        text-align: center;
+        font-size: 18px;
+    }
+
+
+    .contato{
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px){ 
+
+    .col-sm-8{
+        padding-right: 0;
+        font-size: 3em;
+    }
+
+    .col-sm-4{
+        padding: 0;
+    }
+
+    .btn.btn-primary{
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    .infos .row.align-items-start{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+.container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+}
+
+@media screen and (min-width: 992px) { 
+    
+    .contato{
+        padding-top: 150px;
+    }
+
+    .clearfix{
+        padding-top: 100px;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    .col-sm-8{
+        padding-left: 50px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .contato{
+        padding-top: 45px;
+    }
+}
